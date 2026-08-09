@@ -28,6 +28,44 @@ header {
     cursor: pointer;
 }
 
+.logo-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.brand-logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #f5c518;
+    box-shadow: 0 0 10px rgba(245, 197, 24, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.logo-brand:hover .brand-logo-img {
+    transform: scale(1.08);
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-gold {
+    color: #f5c518;
+    background: linear-gradient(45deg, #f5c518, #ffea79);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .back-btn {
     background-color: #f5c518;
     color: #000;
@@ -43,6 +81,46 @@ header {
     background-color: #e0b000;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #f5c518;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: #2a3a4a;
+    color: #f5c518;
+    border: 1px solid #f5c518;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #3a4a5a;
+}
+
+.btn-secondary.active {
+    background-color: #2e7d32 !important;
+    color: #ffffff !important;
+    border-color: #4caf50 !important;
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -50,8 +128,7 @@ a{
 
 /* Movie Header Section */
 .movie-header {
-    background: linear-gradient(135deg, rgba(30, 30, 30, 0.8), rgba(15, 23, 30, 0.9)),
-                url('https://via.placeholder.com/1200x400/2c1810/f5c518?text=Oppenheimer+Background');
+    background: linear-gradient(135deg, rgba(26, 35, 50, 0.95), rgba(15, 23, 30, 0.98));
     background-size: cover;
     background-position: center;
     padding: 60px 50px;
@@ -158,17 +235,6 @@ a{
 .btn-primary:hover {
     background-color: #e0b000;
     transform: scale(1.05);
-}
-
-.btn-secondary {
-    background-color: #444;
-    color: #fff;
-    border: 2px solid #f5c518;
-}
-
-.btn-secondary:hover {
-    background-color: #555;
-    border-color: #e0b000;
 }
 
 /* Content Sections */

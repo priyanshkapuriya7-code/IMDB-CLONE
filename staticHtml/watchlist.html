@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Watchlist - CineFlix</title>
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="stylesheet" href="styleMovie.css">
+    <style>
+        .watchlist-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            min-height: 70vh;
+        }
+        .watchlist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #2a3a4a;
+            padding-bottom: 15px;
+        }
+        .watchlist-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .clear-watchlist-btn {
+            background: #2a3a4a;
+            color: #ff4d4d;
+            border: 1px solid #ff4d4d;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .clear-watchlist-btn:hover {
+            background: #ff4d4d;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo-brand">
+            <img src="image/logo.png" alt="CineFlix Logo" class="brand-logo-img">
+            <span class="logo-text">Cine<span class="logo-gold">Flix</span></span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="watchlist.html" class="active">Watchlist</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="watchlist-container">
+        <div class="watchlist-header">
+            <h1 class="watchlist-title">
+                <span style="color: #f5c518;">♡</span> Your Watchlist
+            </h1>
+            <button id="clearWatchlistBtn" class="clear-watchlist-btn" style="display: none;">Clear All</button>
+        </div>
+
+        <div id="watchlistContent">
+            <!-- Dynamically populated by watchlist.js -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#help">Help</a>
+                <a href="#about">About Us</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CineFlix. All rights reserved. | Made By Priyansh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="watchlist.js"></script>
+</body>
+</html>

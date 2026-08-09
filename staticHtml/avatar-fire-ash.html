@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar: Fire & Ash - IMDb</title>
+    <title>Avatar: Fire & Ash - CineFlix</title>
     <link rel="stylesheet" href="movieDetails.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">IMDb</div>
+        <a href="index.html" class="logo-brand">
+            <img src="image/logo.png" alt="CineFlix Logo" class="brand-logo-img">
+            <span class="logo-text">Cine<span class="logo-gold">Flix</span></span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+            </ul>
+        </nav>
         <button class="back-btn" onclick="history.back()">← Back</button>
     </header>
 
@@ -32,8 +42,8 @@
                     The third chapter of the Avatar saga continues exploring the extraordinary world of Pandora with stunning visual effects and immersive storytelling. Following the events of previous films, new conflicts emerge as Pandora faces unprecedented threats.
                 </p>
                 <div class="action-buttons">
-                    <button class="btn btn-primary">▶ Watch Now</button>
-                    <button class="btn btn-secondary">✓ Add to Watchlist</button>
+                    <button type="button" class="btn btn-primary">▶ Watch Now</button>
+                    <button type="button" class="btn btn-secondary">♡ Add to Watchlist</button>
                 </div>
             </div>
         </div>
@@ -161,9 +171,10 @@
                 <a href="#contact">Contact Us</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 IMDb. All rights reserved. | Made By Priyansh</p>
+                <p>&copy; 2025 CineFlix. All rights reserved. | Made By Priyansh</p>
             </div>
         </div>
     </footer>
+    <script src="watchlist.js"></script>
 </body>
 </html>

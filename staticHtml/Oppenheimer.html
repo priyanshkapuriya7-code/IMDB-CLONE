@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Details - IMDb</title>
+    <title>Oppenheimer - CineFlix</title>
     <link rel="stylesheet" href="movieDetails.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">IMDb</div>
-        <button class="back-btn" onclick="history.back()">← Back to Home</button>
+        <a href="index.html" class="logo-brand">
+            <img src="image/logo.png" alt="CineFlix Logo" class="brand-logo-img">
+            <span class="logo-text">Cine<span class="logo-gold">Flix</span></span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+            </ul>
+        </nav>
+        <button class="back-btn" onclick="history.back()">← Back</button>
     </header>
 
     <!-- Movie Header Section -->
     <div class="movie-header">
         <div class="movie-header-content">
-            <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg" alt="Oppenheimer" class="movie-poster">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2D9RaBDDLlNQftMvKHq-DQt9wxDgRSCA-gdIIDepWQ&s=10" alt="Oppenheimer" class="movie-poster">
             <div class="movie-header-info">
                 <h1 class="movie-title">Oppenheimer</h1>
                 <div class="movie-meta">
@@ -26,14 +36,14 @@
                     </div>
                     <div class="meta-item">2023</div>
                     <div class="meta-item">180 min</div>
-                    <div class="meta-item">Drama, History</div>
+                    <div class="meta-item">Drama</div>
                 </div>
                 <p class="movie-description">
-                    The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II. As the director of the Manhattan Project, he grapples with the moral implications of creating a weapon of mass destruction.
+                    The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II. Director Christopher Nolan crafts a masterpiece exploring the moral complexities of scientific achievement.
                 </p>
                 <div class="action-buttons">
-                    <button class="btn btn-primary">▶ Watch Now</button>
-                    <button class="btn btn-secondary">✓ Add to Watchlist</button>
+                    <button type="button" class="btn btn-primary">▶ Watch Now</button>
+                    <button type="button" class="btn btn-secondary">♡ Add to Watchlist</button>
                 </div>
             </div>
         </div>
@@ -161,9 +171,10 @@
                 <a href="#contact">Contact Us</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 IMDb. All rights reserved.</p>
+                <p>&copy; 2025 CineFlix. All rights reserved. | Made By Priyansh</p>
             </div>
         </div>
     </footer>
+    <script src="watchlist.js"></script>
 </body>
 </html>

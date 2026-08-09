@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMDb - Home</title>
+    <title>CineFlix - Home</title>
     <link rel="stylesheet" href="styleHome.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">IMDb</div>
+        <a href="index.html" class="logo-brand">
+            <img src="image/logo.png" alt="CineFlix Logo" class="brand-logo-img">
+            <span class="logo-text">Cine<span class="logo-gold">Flix</span></span>
+        </a>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="movie.html">Movies</a></li>
-                <li><a href="#tv">TV Shows</a></li>
-                <li><a href="#upcoming">Upcoming</a></li>
-                <li><a href="#watchlist">Watchlist</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Photo Change Slider -->
     <div class="hero">
-        <h1>Welcome to IMDb</h1>
+        <h1>Welcome to CineFlix</h1>
         <p>Discover your next favorite movie or TV show</p>
         <div class="search-bar">
-            <input type="text" placeholder="Search for movies, TV shows, and more...">
+            <input type="text" placeholder="Search for movies, TV shows, and more on CineFlix...">
             <button>Search</button>
+        </div>
+
+        <!-- Pure Image Hero Photo Change Slider -->
+        <div class="pure-image-hero-wrap">
+            <div class="pure-image-hero-card" id="heroCard">
+                <!-- Ambient Blurred Backdrop -->
+                <div class="pure-hero-bg-blur" id="heroBgBlur"></div>
+
+                <!-- Clickable Poster Link -->
+                <a href="avatar-fire-ash.html" class="pure-image-link" id="heroImageLink">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMLUfR8pIcP6VS4SxMOR-bl_uxP35TK5vj8WmsZ3WiMA&s=10" alt="Avatar: Fire & Ash" class="pure-hero-img" id="heroImg">
+                    <div class="pure-hero-overlay-content">
+                        <span class="pure-hero-title" id="heroTitleOverlay">Avatar: Fire & Ash</span>
+                        <span class="hero-watch-btn">▶ Watch Now</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Arrows -->
+                <button type="button" class="pure-hero-arrow arrow-left" id="prevBtn" title="Previous Image">❮</button>
+                <button type="button" class="pure-hero-arrow arrow-right" id="nextBtn" title="Next Image">❯</button>
+
+                <!-- Pagination Dots -->
+                <div class="pure-hero-dots" id="heroDots"></div>
+            </div>
         </div>
     </div>
 
@@ -100,7 +125,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://image.tmdb.org/t/p/original/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg" alt="Killers of the Moon" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Killers of the Flower Moon</div>
@@ -109,7 +134,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p13472534_p_v8_am.jpg" alt="Barbie" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Barbie</div>
@@ -118,7 +143,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg" alt="Dune Part Two" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Dune: Part Two</div>
@@ -127,7 +152,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw9L6C3p-456nUsTlIV9hXxfOH7uktpc-7sANTE0SYwiL9mKYqZB-WfJA&s=10" alt="Inception" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Inception</div>
@@ -146,7 +171,7 @@
         <h2 class="section-title">Top Rated Movies</h2>
         <div class="movies-grid">
             <!-- MODIFICATION: Changed from <div> to <a> tag with href -->
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRdzCUrOHhWOeVVQHnhdmCbnTp4MNosEtqR8L-lNbaQw&s=10" alt="The Shawshank Redemption" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">The Shawshank Redemption</div>
@@ -155,7 +180,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8ZBBUbkiDl8y-uQAt8OyUKjcUXnhMvEnMqGL7F_ebw&s=10" alt="The Godfather" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">The Godfather</div>
@@ -164,7 +189,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE0ARsfOw1O0bVOze9YZn81azgtj48aiDD6lu-10kobQ&s=10" alt="The Dark Knight" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">The Dark Knight</div>
@@ -173,7 +198,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWIQM24wEEL-i9h1Zt7BAQxFhyrlVyntTcMrN4bIsbEw&s=10" alt="12th Fail" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">12th Fail</div>
@@ -182,7 +207,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSW5tXcNZgPHs6j1UwF9M7l2Sn3sa9dNvmEhg7FD7Zjg&s=10" alt="3 Idiots " class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">3 Idiots </div>
@@ -199,7 +224,7 @@
     <div class="section">
         <h2 class="section-title">Upcoming Movies</h2>
         <div class="movies-grid">
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAXmOp-rAGhNaGerFRC447fAT1DNT-p-c5uZYJ25dtA&s=10" alt="Avatar 4" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Avatar 4</div>
@@ -208,7 +233,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7F-rLizTQqO7VPnqiavcLi2ZL5kC4Ppqlf2KPVsUCw&s=10" alt="Avengers 5" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Avengers 5</div>
@@ -217,7 +242,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVYMy58WzlatxRd4WVcJOfxEFewAYonFeKlWs3sB725w&s=10" alt="Aquaman 3" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Aquaman 3</div>
@@ -226,7 +251,7 @@
                 </div>
             </a>
 
-            <a href="movie_page1.html" class="movie-card">
+            <a href="movie.html" class="movie-card">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVIS6Kf_gvo614_r_lWCVNB5Q6kaJM-1v-at6peTwN0Q&s=10" alt="Wonder Woman 4" class="movie-poster">
                 <div class="movie-info">
                     <div class="movie-name">Wonder Woman 4</div>
@@ -240,7 +265,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">IMDb</div>
+            <div class="footer-logo"><span class="logo-text">Cine<span class="logo-gold">Flix</span></span></div>
             <div class="footer-links">
                 <a href="#help">Help</a>
                 <a href="#about">About Us</a>
@@ -252,9 +277,133 @@
                 <a href="#press">Press</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 IMDb. All rights reserved. | Made By Priyansh</p>
+                <p>&copy; 2025 CineFlix. All rights reserved. | Made By Priyansh</p>
             </div>
         </div>
     </footer>
+
+    <!-- Photo Change Slider Script -->
+    <script>
+        const slideImages = [
+            {
+                href: "avatar-fire-ash.html",
+                title: "Avatar: Fire & Ash",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMLUfR8pIcP6VS4SxMOR-bl_uxP35TK5vj8WmsZ3WiMA&s=10"
+            },
+            {
+                href: "minecraft-movie.html",
+                title: "A Minecraft Movie",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-hZIOCJGkD-Nmum4WMgbMLTEaTbB3O12Wixp9iQ3Lw&s=10"
+            },
+            {
+                href: "jurassic-world-rebirth.html",
+                title: "Jurassic World: Rebirth",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZzFrm-yNPPfGctX383mRX2AEWCAzYH3xhvEBV8XsLXg&s=10"
+            },
+            {
+                href: "dhurandhar-2.html",
+                title: "Dhurandhar Part 2: Revenge",
+                image: "https://cdn.district.in/movies-assets/images/cinema/Dhurandhar-The-Revenge_Cover-26619500-19f4-11f1-aaaf-4f0103e6be2d.jpg"
+            },
+            {
+                href: "Oppenheimer.html",
+                title: "Oppenheimer",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2D9RaBDDLlNQftMvKHq-DQt9wxDgRSCA-gdIIDepWQ&s=10"
+            }
+        ];
+
+        let currentIndex = 0;
+        let autoSlideTimer = null;
+
+        const heroBgBlur = document.getElementById('heroBgBlur');
+        const heroImageLink = document.getElementById('heroImageLink');
+        const heroImg = document.getElementById('heroImg');
+        const heroTitleOverlay = document.getElementById('heroTitleOverlay');
+        const heroDotsContainer = document.getElementById('heroDots');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const heroCard = document.getElementById('heroCard');
+
+        function createDots() {
+            heroDotsContainer.innerHTML = '';
+            slideImages.forEach((item, index) => {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'pure-dot' + (index === currentIndex ? ' active' : '');
+                dot.title = item.title;
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider();
+                    resetTimer();
+                });
+                heroDotsContainer.appendChild(dot);
+            });
+        }
+
+        function updateSlider() {
+            const item = slideImages[currentIndex];
+            
+            heroImg.style.opacity = '0.2';
+            setTimeout(() => {
+                heroBgBlur.style.backgroundImage = `url('${item.image}')`;
+                heroImageLink.href = item.href;
+                heroImg.src = item.image;
+                heroImg.alt = item.title;
+                heroTitleOverlay.textContent = item.title;
+                heroImg.style.opacity = '1';
+            }, 150);
+
+            const dots = heroDotsContainer.querySelectorAll('.pure-dot');
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slideImages.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slideImages.length) % slideImages.length;
+            updateSlider();
+        }
+
+        function startTimer() {
+            autoSlideTimer = setInterval(nextSlide, 3500);
+        }
+
+        function resetTimer() {
+            clearInterval(autoSlideTimer);
+            startTimer();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetTimer();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetTimer();
+        });
+
+        heroCard.addEventListener('mouseenter', () => {
+            clearInterval(autoSlideTimer);
+        });
+
+        heroCard.addEventListener('mouseleave', () => {
+            startTimer();
+        });
+
+        createDots();
+        updateSlider();
+        startTimer();
+    </script>
+    <script src="watchlist.js"></script>
 </body>
 </html>

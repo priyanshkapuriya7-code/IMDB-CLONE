@@ -1,0 +1,60 @@
+/* Upper Hero Welcome Header */
+.home-welcome-header {
+  text-align: center;
+  margin: 30px auto 10px;
+  padding: 0 20px;
+  max-width: 1100px;
+}
+
+.welcome-main-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.gold-highlight {
+  color: #f5c518;
+}
+
+.welcome-main-tagline {
+  font-size: 15px;
+  color: #b0b0b0;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Movie Grid (5 cards per row) */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Responsive Grid Breakpoints */
+@media (max-width: 1100px) {
+  .movies-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .movies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-main-title {
+    font-size: 26px;
+  }
+  .welcome-main-tagline {
+    font-size: 13px;
+  }
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jurassic World: Rebirth - IMDb</title>
+    <title>Jurassic World: Rebirth - CineFlix</title>
     <link rel="stylesheet" href="movieDetails.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <div class="logo">IMDb</div>
+        <a href="index.html" class="logo-brand">
+            <img src="image/logo.png" alt="CineFlix Logo" class="brand-logo-img">
+            <span class="logo-text">Cine<span class="logo-gold">Flix</span></span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="watchlist.html">Watchlist</a></li>
+            </ul>
+        </nav>
         <button class="back-btn" onclick="history.back()">← Back</button>
     </header>
 
@@ -24,14 +35,14 @@
                     </div>
                     <div class="meta-item">2025</div>
                     <div class="meta-item">155 min</div>
-                    <div class="meta-item">Sci-Fi, Adventure</div>
+                    <div class="meta-item">Sci-Fi</div>
                 </div>
                 <p class="movie-description">
                     A thrilling continuation of the dinosaur adventure franchise with groundbreaking CGI and compelling character development. Scientists uncover new dinosaur species and must navigate ethical dilemmas while facing prehistoric dangers in this action-packed sequel.
                 </p>
                 <div class="action-buttons">
-                    <button class="btn btn-primary">▶ Watch Now</button>
-                    <button class="btn btn-secondary">✓ Add to Watchlist</button>
+                    <button type="button" class="btn btn-primary">▶ Watch Now</button>
+                    <button type="button" class="btn btn-secondary">♡ Add to Watchlist</button>
                 </div>
             </div>
         </div>
@@ -155,9 +166,10 @@
                 <a href="#contact">Contact Us</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 IMDb. All rights reserved. | Made By Priyansh</p>
+                <p>&copy; 2025 CineFlix. All rights reserved. | Made By Priyansh</p>
             </div>
         </div>
     </footer>
+    <script src="watchlist.js"></script>
 </body>
 </html>
