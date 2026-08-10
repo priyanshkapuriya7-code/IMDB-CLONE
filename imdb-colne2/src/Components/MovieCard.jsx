@@ -26,14 +26,14 @@ function MovieCard({ movie, isInWatchlist, onToggleWatchlist, showWatchlistBtn =
             {movie.year} • {movie.genre}
           </div>
         </Link>
-        {showWatchlistBtn && onToggleWatchlist && (
+        {/* {showWatchlistBtn && onToggleWatchlist && (
           <button
             type="button"
             className={`card-watchlist-btn ${isInWatchlist ? 'active' : ''}`}
           >
             {isInWatchlist ? '✓ In Watchlist' : '+ Add to Watchlist'}
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );

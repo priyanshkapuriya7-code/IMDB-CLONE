@@ -58,12 +58,12 @@ function MovieListPage() {
                     <button
                       type="button"
                       className={`btn ${inWatchlist ? 'btn-watchlist-active' : 'btn-secondary'}`}
-                      onClick={() => toggleWatchlist(movie)}
-                      style={{
-                        backgroundColor: inWatchlist ? '#2e7d32' : '',
-                        borderColor: inWatchlist ? '#4caf50' : '',
-                        color: inWatchlist ? '#fff' : '',
-                      }}
+                      // onClick={() => toggleWatchlist(movie)}
+                      // style={{
+                      //   backgroundColor: inWatchlist ? '#2e7d32' : '',
+                      //   borderColor: inWatchlist ? '#4caf50' : '',
+                      //   color: inWatchlist ? '#fff' : '',
+                      // }}
                     >
                       {inWatchlist ? (
                         <>✓ In Watchlist</>
