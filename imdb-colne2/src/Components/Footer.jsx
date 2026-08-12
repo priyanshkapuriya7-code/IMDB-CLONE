@@ -6,7 +6,7 @@ function Footer() {
     <footer className="cineflix-footer">
       <div className="footer-container">
         <div className="footer-main">
-          {/* Brand & About */}
+
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
               <span className="logo-text">Cine<span className="logo-gold">Flix</span></span>
@@ -26,7 +26,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+
           <div className="footer-links-col">
             <h4 className="footer-heading">Quick Links</h4>
             <ul>
@@ -36,7 +36,7 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Help & Legal */}
+  
           <div className="footer-links-col">
             <h4 className="footer-heading">Support</h4>
             <ul>
@@ -49,7 +49,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Footer Bottom */}
+
         <div className="footer-bottom">
           <p>&copy; {new Date().getFullYear()} CineFlix. All rights reserved. | Made By Priyansh</p>
         </div>

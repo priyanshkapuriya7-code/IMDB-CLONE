@@ -1,4 +1,3 @@
-/* Category Filter Bar */
 .filter-bar {
   display: flex;
   gap: 12px;
@@ -25,7 +24,7 @@
   font-weight: bold;
 }
 
-/* Movie List View */
+
 .movie-list {
   display: flex;
   flex-direction: column;
