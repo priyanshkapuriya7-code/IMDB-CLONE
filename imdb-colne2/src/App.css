@@ -17,7 +17,6 @@ a {
   text-decoration: none;
 }
 
-/* Header & Navigation */
 header.navbar {
   background-color: #121212;
   padding: 12px 40px;
@@ -187,7 +186,6 @@ nav a:hover, nav a.active {
   transform: translateY(-2px);
 }
 
-/* Pure Image Hero Slider Section */
 .pure-image-hero-wrap {
   width: 100%;
   max-width: 850px;
@@ -240,7 +238,6 @@ nav a:hover, nav a.active {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Pure Hero Arrows */
 .pure-hero-arrow {
   position: absolute;
   top: 50%;
@@ -274,7 +271,7 @@ nav a:hover, nav a.active {
   right: 15px;
 }
 
-/* Pure Hero Dots */
+
 .pure-hero-dots {
   position: absolute;
   bottom: 12px;
@@ -300,7 +297,6 @@ nav a:hover, nav a.active {
   transform: scale(1.3);
 }
 
-/* Page Container & Section Titles */
 .container {
   max-width: 1200px;
   margin: 30px auto;
@@ -322,7 +318,7 @@ nav a:hover, nav a.active {
   align-items: center;
 }
 
-/* Movie Grid (5 cards per row) */
+
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -330,7 +326,7 @@ nav a:hover, nav a.active {
   margin-bottom: 30px;
 }
 
-/* Movie Card */
+
 .movie-card {
   background-color: #1a2332;
   border-radius: 8px;
@@ -420,7 +416,7 @@ nav a:hover, nav a.active {
   margin-top: auto;
 }
 
-/* Movie List View */
+
 .movie-list {
   display: flex;
   flex-direction: column;
@@ -540,7 +536,7 @@ nav a:hover, nav a.active {
   color: #000;
 }
 
-/* Category Filter Bar */
+
 .filter-bar {
   display: flex;
   gap: 12px;
@@ -566,7 +562,6 @@ nav a:hover, nav a.active {
   font-weight: bold;
 }
 
-/* Movie Detail Header */
 .movie-header {
   background: linear-gradient(135deg, rgba(26, 35, 50, 0.95), rgba(15, 23, 30, 0.98));
   padding: 50px 40px;
@@ -616,7 +611,7 @@ nav a:hover, nav a.active {
   font-size: 14px;
 }
 
-/* About & Cast Grid */
+
 .content {
   max-width: 1200px;
   margin: 0 auto;
@@ -659,7 +654,6 @@ nav a:hover, nav a.active {
   color: #fff;
 }
 
-/* Cast Grid (4 cast members per row) */
 .cast-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -701,7 +695,6 @@ nav a:hover, nav a.active {
   color: #b0b0b0;
 }
 
-/* Footer */
 footer {
   background-color: #000;
   border-top: 1px solid #333;
